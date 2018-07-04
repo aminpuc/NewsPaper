@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:orientation="vertical"
-    android:background="#ed4043">
+    android:background="@drawable/background_second">
 
     <TextView
         android:layout_width="match_parent"
@@ -14,8 +14,8 @@
         android:text="Daily News Updates"
         android:textStyle="bold"
         android:gravity="center"
-        android:textSize="25sp"
         android:textColor="@android:color/white"
+        android:textSize="25sp"
         />
     <HorizontalScrollView
         android:layout_width="match_parent"
@@ -25,119 +25,197 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp">
+
             <Button
-                android:layout_width="150dp"
-                android:layout_height="50dp"
                 android:id="@+id/buttonProthomAlo"
-                android:text="Prothom Alo"/>
-            <Button
+                style="@style/Widget.AppCompat.Button.Colored"
                 android:layout_width="150dp"
                 android:layout_height="50dp"
+                android:text="Prothom Alo" />
+
+            <Button
                 android:id="@+id/buttonJugantar"
-                android:text="Jugantar"/>
-            <Button
+                style="@style/Widget.AppCompat.Button.Colored"
                 android:layout_width="150dp"
                 android:layout_height="50dp"
+                android:text="Jugantar" />
+
+            <Button
                 android:id="@+id/buttonShamakal"
-                android:text="Shamakal"/>
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:text="Shamakal" />
+            <Button
+                android:id="@+id/buttonJanakantha"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:text="Janakantha" />
         </LinearLayout>
     </HorizontalScrollView>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Daily Sports Updates"
-        android:textStyle="bold"
-        android:gravity="center"
-        android:textSize="25sp"
-        android:textColor="@android:color/white"
-        />
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:gravity="center"
             android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_marginTop="10dp">
-            <Button
+
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:text="Daily Sports Updates"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="25sp"
+                />
+            <Button
                 android:id="@+id/buttonFootball"
-                android:text="Football"/>
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:text="Football"
+                android:textStyle="bold" />
+
             <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:id="@+id/buttonCricket"
-                android:text="Cricket"/>
-        </LinearLayout>
-
-    </ScrollView>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Daily Job Updates"
-        android:textStyle="bold"
-        android:gravity="center"
-        android:textSize="25sp"
-        android:textColor="@android:color/white"
-        />
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <LinearLayout
-            android:gravity="center"
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp">
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:text="Cricket"
+                android:textStyle="bold" />
             <Button
+                android:id="@+id/buttonHokey"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:text="Hokey"
+                android:textStyle="bold" />
+            <Button
+                android:id="@+id/buttonTennis"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:text="Tennis"
+                android:textStyle="bold" />
+            <Button
+                android:id="@+id/buttonLiveScore"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:text="Live Score"
+                android:textStyle="bold" />
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/button1"
-                android:text="Football"/>
+                android:text="Daily Job Updates"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="25sp"
+                />
             <Button
+                android:id="@+id/buttonPartTimeJobs"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:text="Part Time Jobs"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/buttonChakri"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:text="Chakri.com"
+                android:textStyle="bold" />
+            <Button
+                android:id="@+id/buttonBdJobs"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:text="BdJobs.com"
+                android:textStyle="bold" />
+            <Button
+                android:id="@+id/buttonAllBdJobs"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:text="AllBdJobs.com"
+                android:textStyle="bold" />
+            <Button
+                android:id="@+id/buttonGovJobs"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:text="Goverment Jobs"
+                android:textStyle="bold" />
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/button2"
-                android:text="Cricket"/>
-        </LinearLayout>
-
-    </ScrollView>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Internatinal News Updates"
-        android:textStyle="bold"
-        android:gravity="center"
-        android:textSize="25sp"
-        android:textColor="@android:color/white"
-        />
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <LinearLayout
-            android:gravity="center"
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp">
+                android:text="Internatinal News Updates"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="25sp"
+                />
             <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/button3"
-                android:text="Football"/>
+                android:id="@+id/buttonBBC"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:text="BBC News"
+                android:textStyle="bold" />
+
             <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/button4"
-                android:text="Cricket"/>
+                android:id="@+id/buttonAljazeera"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:text="Aljazeera"
+                android:textStyle="bold" />
+            <Button
+                android:id="@+id/buttonTimesIndia"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:text="Times in India"
+                android:textStyle="bold" />
+            <Button
+                android:id="@+id/buttonCNN"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:text="CNN News"
+                android:textStyle="bold" />
+            <Button
+                android:id="@+id/buttonFox"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:text="Fox News"
+                android:textStyle="bold" />
         </LinearLayout>
 
     </ScrollView>
